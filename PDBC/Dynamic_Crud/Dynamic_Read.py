@@ -71,7 +71,7 @@ def read4(param={}):
     salary = param.get('salary',0)
     connection = pymysql.connect(host='localhost', user="root", password="root", db="advpython")
     cursor = connection.cursor()
-    sql = "select * from student where 1=1 "    # 1=1 it is called as sql injection (it adds two sql queres when we use and instead of where )
+    sql = "select * from student where 1=1 "    # 1=1 it is called as sql injection (it adds two sql queries when we use and instead of where )
 
     if id != 0:
         sql = sql + "and id = " + str(id)

@@ -34,4 +34,4 @@ def delete2(name):
 
 # delete()
 # delete1()
-#delete2("jayesh")
+delete2("jayesh")
