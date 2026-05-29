@@ -1,7 +1,7 @@
 import pymysql
 
 connection = pymysql.connect(host="localhost",user="root",password="root",db="advpython")
-connection.autocommit(True)
+connection.autocommit(True)  # by default false rehta hai
 cursor = connection.cursor()
 
 sql1 = "insert into marksheet values(16,116,'chetan',67,89,26)"
