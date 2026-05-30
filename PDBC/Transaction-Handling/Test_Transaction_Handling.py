@@ -17,3 +17,4 @@ try:
 except Exception as e:
     connection.rollback()
     print("Transection rolled back due to error  :",e)
+
